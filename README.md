@@ -41,24 +41,24 @@ The repo is structured according to GitOps best practices, separating **applicat
 ## 🔧 Virtualization Layer
 
 ### pve0 (Proxmox VE)
-| VMID  | Hostname | OS |                                   |
-|-------|---------------------------------------------------| |
-|       |                                        | |
+| VMID  | Hostname | OS |
+|-------|----------|----|
 |       |    | |
 |       |    | |
+|       |    | |  
 
 ### pve1 (Proxmox VE)
-| VMID  | Hostname | OS |                                   |
-|-------|---------------------------------------------------| |
-|       |                                        | |
+| VMID  | Hostname | OS |
+|-------|----------|----|
+|       |    | |
 |       |    | |
 |       |    | |   
 
 ### pve2 (Proxmox VE)
-| VMID  | Hostname | OS |                                   |
-|-------|--------------------------------------------------| |
-|       |                                        | |
-|       |    | | 
+| VMID  | Hostname | OS |
+|-------|----------|----|
+|       |    | |
+|       |    | |
 |       |    | |  
 
 ---
