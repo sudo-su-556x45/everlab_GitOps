@@ -30,17 +30,18 @@ The repo is structured according to GitOps best practices, separating **applicat
 
 ## 🏗️ Physical Infrastructure
 | Component       | Details                                           |
-|-----------------|---------------------------------------------------|
-| **Rack Units**  | (e.g., 18U homelab rack)                         |
-| **Networking**  | (e.g., Unifi switch + pfSense firewall)          |
-| **Power**       | (e.g., dual UPS, PDU managed power strips)       |
+|--------------------------|---------------------------------------------------|
+| **Dell Poweredge R730**  | |
+| **Dell Poweredge R730**  | |
+| **Dell Poweredge R710**  | |
+| **Cisco Catalyst**       | |
 
 ---
 
 ## 🔧 Virtualization Layer (Proxmox VE)
 | Attribute       | Details                                           |
 |-----------------|---------------------------------------------------|
-| **Hypervisor**  | Proxmox VE                                        |
+| **Hypervisors**  | Proxmox VE                                        |
 | **Storage**     | (e.g., ZFS RAIDZ2, Ceph cluster, or SSD pool)     |
 | **Backup**      | (e.g., Proxmox Backup Server, NAS replication)    |
 
@@ -49,16 +50,16 @@ The repo is structured according to GitOps best practices, separating **applicat
 ## ☸️ Kubernetes Cluster Overview
 
 ### Control Plane
-| Node          | vCPU | Memory | Disk  | OS                   |
-|---------------|------|--------|-------|----------------------|
-| prod-k8m-01   | XX   | XX GB  | XX GB | Ubuntu 22.04 LTS     |
+| Node          | Host    | vCPU | Memory | Disk  | OS                   |
+|---------------|---------|------|--------|-------|----------------------|
+| prod-k8m-01   | pve0    | 1    | 2 GB  | 20 GB  | Debian 10            |
 
 ### Worker Nodes
-| Node          | vCPU | Memory | Disk  | OS                   |
-|---------------|------|--------|-------|----------------------|
-| prod-k8w-01   | XX   | XX GB  | XX GB | Ubuntu 22.04 LTS     |
-| prod-k8w-02   | XX   | XX GB  | XX GB | Ubuntu 22.04 LTS     |
-| prod-k8w-03   | XX   | XX GB  | XX GB | Ubuntu 22.04 LTS     |
+| Node          | Host    | vCPU | Memory | Disk  | OS                   |
+|---------------|---------|------|--------|-------|----------------------|
+| prod-k8w-01   | pve0    | 4    | 16 GB  | 20 GB | Debian 10            |
+| prod-k8w-02   | pve0    | 4    | 16 GB  | 20 GB | Debian 10            |
+| prod-k8w-03   | pve0    | 4    | 16 GB  | 20 GB | Debian 10            |
 
 ---
 
