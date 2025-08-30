@@ -38,13 +38,28 @@ The repo is structured according to GitOps best practices, separating **applicat
 
 ---
 
-## 🔧 Virtualization Layer (Proxmox VE)
-| Attribute       | Details                                           |
-|-----------------|---------------------------------------------------|
-| **Hypervisors**  | Proxmox VE                                        |
-| **Storage**     | (e.g., ZFS RAIDZ2, Ceph cluster, or SSD pool)     |
-| **Backup**      | (e.g., Proxmox Backup Server, NAS replication)    |
+## 🔧 Virtualization Layer
 
+###pve0 (Proxmox VE)
+| VMID  | Hostname | OS |                                   |
+|-------|---------------------------------------------------|
+|       |                                        |
+|       |    |
+|       |    |
+
+###pve1 (Proxmox VE)
+| VMID  | Hostname | OS |                                   |
+|-------|---------------------------------------------------|
+|       |                                        |
+|       |    |
+|       |    |    
+
+###pve2 (Proxmox VE)
+| VMID  | Hostname | OS |                                   |
+|-------|---------------------------------------------------|
+|       |                                        |
+|       |    |
+|       |    |   
 ---
 
 ## ☸️ Kubernetes Cluster Overview
